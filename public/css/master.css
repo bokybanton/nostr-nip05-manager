@@ -1,0 +1,17 @@
+
+.jumbotron {
+  background: linear-gradient(to bottom, #e9c4fe, #d380ff);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  }
+  .btn-custom {
+    color: #ffffff;
+    font-size:1.2em;
+    background-color: #7a32a3;
+    border-color: #7a32a3;
+  }
+
+  .btn-custom:hover {
+    background-color: #4e1a6a;
+    border-color: #4e1a6a;
+  }

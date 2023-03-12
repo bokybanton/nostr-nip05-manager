@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine On
+    RewriteRule ^nostr.json(.*)$ /.well-known/nostr.php$1 [L]

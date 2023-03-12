@@ -1,0 +1,31 @@
+{
+    "require": {
+        "twbs/bootstrap": "^5.2",
+        "twbs/bootstrap-icons": "^1.10",
+        "php-quickorm/captcha": "^1.0"
+    },
+    "scripts": {
+        "pre-install-cmd":[
+            "mkdir public",
+            "mkdir public/bootstrap",
+            "cp -R vendor/twbs/bootstrap/dist public/bootstrap",
+            "cp -R vendor/twbs/bootstrap-icons/font public/bs-icons",
+            "cp -R vendor/php-quickform/captcha app/captcha",
+            "rm -rf app/captcha/demo",
+            "rm app/captcha/composer.json",
+            "rm app/captcha/README.MD"
+        ],
+            
+        "post-update-cmd": [
+            "rm -rf public/bootstrap",
+            "rm -rf public/bs-icons",
+            "cp -R vendor/twbs/bootstrap-icons/font public/bs-icons",
+            "cp -R vendor/twbs/bootstrap/dist public/bootstrap",
+            "rm -rf app/captcha",
+            "cp -R vendor/php-quickform/captcha app/captcha",
+            "rm -rf app/captcha/demo",
+            "rm app/captcha/composer.json",
+            "rm app/captcha/README.MD"
+        ]
+    }
+}

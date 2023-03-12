@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# Redirect URLs with a single path segment to the appropriate query string
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ /?route=$1 [L]
+
+# Redirect URLs with two path segments to the appropriate query string
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)/?$ /?route=$1&action=$2 [L]
+
+# Redirect URLs with three path segments to the appropriate query string
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ /?route=$1&action=$2&action2=$3 [L]
+
+# Redirect URLs with three path segments to the appropriate query string
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ /?route=$1&action=$2&action2=$3&action3=$4 [L]

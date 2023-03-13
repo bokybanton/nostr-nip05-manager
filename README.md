@@ -24,6 +24,7 @@ This is a PHP&MariaDB nip-05 manager for nostr protocol. This means you can mana
 - Point the dmoain to your machine
 - Install apache2, php (with mod headers), php composer, mariadb, run sql secure install, install certbot and run a https certificate.
 - Configure your apache2 to point your host (or Virtualhost) to your nip-05-manager public_html folder
+- Then you need to install composer dependencies like bootstrap5, bootstrap-icons and captcha.
 - Allow HTTP CORS on aopache2 conf for your nip05-manager/.well-known/ folder. (it contains the main file of thie project)
 - In this first commit, You need to install the SQL tables manually, you can see in /app/classes/nip05_manager_tables.sql
 - Navigate to your website and Sign up for a new user, 

@@ -1,5 +1,5 @@
 # nostr-nip05-manager
-A simple PHP+MySQL NIP-05 address manager for NOSTR protocol
+A simple PHP+MySQL [NIP-05](https://nips.be/5/) address manager for [NOSTR](https://github.com/nostr-protocol/nostr) protocol
 
 ## Introduction
 This is a PHP&MariaDB nip-05 manager for nostr protocol. This means you can manage name@domain.com addresses attached to 32 bytes hex-encoded public keys from nostr protocol.
@@ -15,7 +15,7 @@ This is a PHP&MariaDB nip-05 manager for nostr protocol. This means you can mana
 
 ## Instalation 
 - Clone this git
-- Modify mariadb.config.php.sample and copy it to /app folder.
+- Modify [mariadb.config.php](app/mariadb.class.php).sample and copy it to /app folder.
 - Place in your public_html folder
 
 
@@ -40,5 +40,7 @@ This is a PHP&MariaDB nip-05 manager for nostr protocol. This means you can mana
 - If you consider this code is totally wrong, please let me know and we can start another project with the new ideas, I want this prokect to be simple as posible and its use could help people to learn how to develop this tools.
 
 ### Future ideas
-- Composer optional
-- Run as private (no registration process)
+
+- [ ] Composer optional
+- [ ] Run as private (no registration process)
+

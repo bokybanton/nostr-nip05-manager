@@ -2,7 +2,7 @@
 A simple PHP+MySQL [NIP-05](https://nips.be/5/) address manager for [NOSTR](https://github.com/nostr-protocol/nostr) protocol
 
 ## Introduction
-This is a PHP&MariaDB nip-05 manager for nostr protocol. This means you can manage name@domain.com addresses attached to 32 bytes hex-encoded public keys from nostr protocol.
+This is a PHP&MariaDB nip-05 manager for nostr protocol. This means you can manage name@domain.com addresses attached to 32 bytes hex-encoded public keys from nostr protocol. It has a little bootstrap html interface that you can run on your browser and set up your addreses. 
 
 ## Prerequisites
 - PHP 7 or >
@@ -36,12 +36,20 @@ This is a PHP&MariaDB nip-05 manager for nostr protocol. This means you can mana
 - Contribute developing.
 
 ### Contributing
-- This is amateur project
-- I accept all kind of contributions but you should add little code edits and with the modular approach I am using
+- This is hobby project and I am selftaken developer. I don't know if I am using correct streategy to write code, I would like appreciate help improving the code.
+- I am not english native, I am galician (portuguese sybiling) native speaker, please consider be polite and help me improve english prompts and english documentation.
+- I accept all kind of contributions but you should add little code edits and with the modular approach I am using or similar approach we can consider in future commits.
 - If you consider this code is totally wrong, please let me know and we can start another project with the new ideas, I want this prokect to be simple as posible and its use could help people to learn how to develop this tools.
 
 ### Future ideas
 
 - [ ] Composer optional
+- [ ] Bootstrap optional
+- [ ] Captcha optional
+- [ ] Rum as an api endpoint
+- [ ] Guide to run on AWS or similar
+- [ ] More code encapsulation
+- [ ] Write PHP classes documentation
+- [ ] Improve to a known php framework for user registration (or similar like using nostr keypair only delegation)
 - [ ] Run as private (no registration process)
 
